@@ -28,9 +28,9 @@ message: Congiguration Server message
 spring:
   profile: mac
   datasource:
-    url: ${DB_URL:jdbc:mysql://192.168.1.11:3306/customer_svc?useUnicode=yes&characterEncoding=UTF-8}
+    url: ${DB_URL:jdbc:mysql://192.168.1.102:3306/customer_svc?useUnicode=yes&characterEncoding=UTF-8}
     driver-class-name: ${DB_DRIVER_CLASS:com.mysql.jdbc.Driver}
-    username: ${DB_USER:root}
+    username: ${DB_USER:sandi}
     password: ${DB_PASS:root}
   jpa:
     show-sql: true
