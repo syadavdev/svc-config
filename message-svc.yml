@@ -17,7 +17,7 @@ eureka:
       defaultZone: ${SVC_DISCOVERY:http://user:password@localhost:9091/eureka/}
 message:
   svc:
-    queue: ${MESSAGE_QUEUE:MESSAGE-QUEUE}
+    queue: ${MESSAGE_QUEUE:MESSAGE-SVC}
 customer:
   svc:
-    queue: ${MESSAGE_QUEUE:CUSTOMER-QUEUE}
+    queue: ${MESSAGE_QUEUE:CUSTOMER-SVC}
