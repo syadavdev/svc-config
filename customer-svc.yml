@@ -26,6 +26,19 @@ eureka:
 customer:
   svc:
     queue: ${RABBIT_QUEUE_NAME:CUSTOMER-SVC}
+oauth2:
+  jwt:
+    public:
+      key:
+        -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkcm7qS7RZfrdMLIVgQQA
+          bFKORsnatz3Bihl2ZJStG7gWfqdewaWEMG0vasBj+LHF+6FSfQjF6C0iVn/21O10
+          RBZ0hfLr/K9nEMVLof+LtxR9UeHec45MA7FKgr1UYKazaaasas4QdvPN0XXxEY6b
+          ZbLJQmV56wtFAzT1+p+S3S1105AvZJjE+GSXljweF4bpRERnmD41IaLOVFl8+N1o
+          mztf4yDhK7zglaSveLVto7dx4/8kFLmJaw/Zqmy6ji9fL/tuq41bP4Cu1/oboQLd
+          iqaYE/nhKW3UzalZGLSsAlDV6wsl7Yp8LCsuO/aa5IOxt/NB08SEgDXEn9XABNbc
+          jwIDAQAB
+        -----END PUBLIC KEY-----
 ---
 spring:
   profiles: test
