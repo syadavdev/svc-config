@@ -10,11 +10,13 @@ spring:
       enabled: true
       locations: classpath:/db/migration
       schemas: customer_svc
-  rabbitmq:
-    host: ${RABBIT_QUEUE_HOST:localhost}
-    port: ${RABBIT_QUEUE_PORT:5672}
-    username: ${RABBIT_QUEUE_USER:admin}
-    password: ${RABIIT_QUEUE_PASS:admin}
+  activemq:
+    broker-url: ${ACTIVEMQ_URL:tcp://localhost:61616}
+    user: ${ACTIVEMQ_USER:admin}
+    password: ${ACTIVEMQ_PASS:admin}
+  jms:
+    listener:
+      auto-startup: true
 server:
   port: ${SERVER_PORT:9093}
 eureka:
