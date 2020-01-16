@@ -20,7 +20,13 @@ eureka:
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: ${SVC_DISCOVERY:http://user:password@${SERVER_URL:localhost}:9091/eureka/}
+      defaultZone: ${SVC_DISCOVERY:http://user:password@${SERVER_URL:192.168.1.103}:9091/eureka/}
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 160000000
+        readTimeout: 160000000
 ---
 spring:
   profiles: test
