@@ -6,8 +6,6 @@ spring:
     password: ${DB_PASS:root}
   jpa:
     show-sql: true
-    hibernate:
-      ddl-auto: validate
   flyway:
       enabled: true
       locations: classpath:/db/migration
