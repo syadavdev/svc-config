@@ -23,6 +23,14 @@ message:
 customer:
   svc:
     queue: ${MESSAGE_QUEUE:CUSTOMER-SVC}
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
 oauth2:
   jwt:
     public:
